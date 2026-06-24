@@ -3,11 +3,11 @@ import numpy as np
 import joblib 
 from datetime import datetime
 
-le_crop=joblib.load("/content/drive/MyDrive/ml/le_crop.pkl")
-le_soil=joblib.load("/content/drive/MyDrive/ml/le_soil.pkl")
-le_fertilizer=joblib.load("/content/drive/MyDrive/ml/le_fertilizer.pkl")
-scalar=joblib.load("/content/drive/MyDrive/ml/scaler.pkl")
-rf_model=joblib.load("/content/drive/MyDrive/ml/random_forest_fertilizer_model.pkl")
+le_crop = joblib.load("le_crop.pkl")
+le_soil = joblib.load("le_soil.pkl")
+le_fertilizer = joblib.load("le_fertilizer.pkl")
+scaler = joblib.load("scaler.pkl")
+rf_model = joblib.load("random_forest_fertilizer_model.pkl")
 
 
 st.title("🌱 Fertilizer Recommendation Agent")
