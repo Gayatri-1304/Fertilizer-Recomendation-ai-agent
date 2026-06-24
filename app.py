@@ -58,7 +58,7 @@ if st.button("Recommend Fertilizer"):
 
     input_scaled = scaler.transform(input_data)
 
-    prediction = model.predict(input_scaled)
+    prediction = rf_model.predict(input_scaled)
 
     fertilizer_name = le_fertilizer.inverse_transform(prediction)[0]
 
