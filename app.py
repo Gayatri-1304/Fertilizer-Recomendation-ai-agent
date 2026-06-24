@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib 
 from datetime import datetime
+import pandas as pd
 
 le_crop = joblib.load("le_crop.pkl")
 le_soil = joblib.load("le_soil.pkl")
